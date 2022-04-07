@@ -1,0 +1,286 @@
+@charset "UTF-8";
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: LightGray;
+	color: black;
+	display: flex;
+  	min-height: 100vh;
+  	flex-direction: column;
+}
+h1{
+	color: red;
+}
+
+h2{
+	color: blue;
+}
+
+div{
+	font-size: 120%;
+}
+
+/*Navbar*/
+#navbar{
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow:hidden;
+  	background-color: black;
+  	text-align: center;
+}
+.navi_li{
+	float: left;
+	size: auto;
+}
+.navi_li a{
+	display: block;
+  	color: white;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: x-large;
+}
+.navi_li a:hover{
+	background-color: orange;
+}
+.active {
+	background-color: #04AA6D;
+}
+nav button{
+	background-color: #04AA6D;
+  	color: white;
+ 	padding: 13px 15px;
+  	margin: 6px 0;
+ 	border: none;
+ 	cursor: pointer;
+ 	width: 100%;
+
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.8;
+}
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.darkmode {
+  background-color: DarkSlateGray;
+  color: white;
+}
+.darkmode a{
+	color: white;
+}
+.darkmode input{
+	background-color: LightGray;
+}
+.darkmode .div-login{
+	background-color: black;
+	color:white;
+}
+
+/* spiel.html*/
+.container{
+	padding: 15px;
+	margin: 0;
+}
+.spiel{
+	
+	width: 110%;
+	padding: 10px;
+	border-style: solid;
+	border-color: red;
+}
+.object-fit{
+	width: 100%; 
+	height: 100%; 
+	
+	
+}
+.object-fit img { 
+	object-fit: cover; 
+	width: 100%; 
+	height: 100%;
+}
+
+/*Frame*/
+.frame {
+	display: grid;
+	justify-content: center;
+	box-shadow: inset 0 0 5px #000;
+	width: 60%;
+	max-height: 80vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5vh;
+		
+	
+}
+
+.contain {
+	width: 100%;
+	height: 80vh;
+}
+
+.image-position {
+	position: relative;
+}
+
+#Bücherei {
+	position: absolute;
+	z-index: 0;
+}
+
+#cursed {
+	position: absolute;
+	z-index: 1;
+}
+.imgmodal{
+	display: block;
+	margin-left:20%;
+	margin-top: 10%;
+	width: 60%;
+}
+.filter{
+	filter: grayscale(0.5) blur(10px);
+}
+
+/*  Slidebar index.html*/
+.slideshow-container {
+	max-width: 74%;	
+	position: relative;
+	margin: auto;
+	border-style:solid;
+	border-width: 10px;
+	border-color: green; 
+	padding: 7px;
+	
+	}
+	.slideshow-container img {vertical-align: middle;}
+
+	/* Next & previous buttons */
+	.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	}
+	/* Position the "next button" to the right */
+	.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+	}
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+	}
+	/* Caption text */
+	.text {
+	color: #ffffff;
+	font-size: 30px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+	text-align: center;
+	}
+	/* Number text (1/3 etc) */
+	.numbertext {
+	color: #ffffff;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+	}
+	/* The dots/bullets/indicators */
+	.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #999999;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+	}
+	.active, .dot:hover {
+	background-color: #111111;
+	}
+	/* Fading animation */
+	.fade2 {
+	animation-name: fade;
+	animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+	}
+	
+	@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+	}
+	
+	.object-fit { 
+	  width: 59vw; 
+	  height: 35vh; 
+	  
+	  }
+	  .object-fit img { 
+		  object-fit: cover; 
+		  width: 100%; 
+		  height: 100%;
+	  }
+
+
+
+
+/*
+.bilder{  
+ 	position: relative;
+ 	top: 30%;
+ 	left: 20%;
+  	margin: 0;
+  	float: none;
+  	padding: 0px;
+  	
+}
+.bilder img{
+	margin: 0px;
+	padding: 0px;
+}
+#buch{
+	position: absolute;
+	z-index:0;
+	
+}
+#klappe{
+	z-index:1;
+	position: absolute;
+	
+}
+#raum{
+	z-index:2;
+	position: absolute;
+	
+}*/
